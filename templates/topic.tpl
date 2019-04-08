@@ -30,12 +30,12 @@
 		<!-- ENDIF merger -->
 
 		<!-- IMPORT partials/topic/deleted-message.tpl -->
-
+		
 		<hr class="visible-xs" />
-		{counter start=1 skip=0}
+		
 		<ul component="topic" class="posts" data-tid="{tid}" data-cid="{cid}">
 			<!-- BEGIN posts -->
-				<li component="post" class="<!-- IF posts.deleted -->deleted<!-- ENDIF posts.deleted -->" <!-- IMPORT partials/data/topic.tpl --> data-page-post-id="{counter}">
+				<li component="post" replycounter="{counter start=1 skip=1}" class="<!-- IF posts.deleted -->deleted<!-- ENDIF posts.deleted -->" <!-- IMPORT partials/data/topic.tpl -->>
 					<a component="post/anchor" data-index="{posts.index}" id="{posts.index}"></a>
 
 					<meta itemprop="datePublished" content="{posts.timestampISO}">
