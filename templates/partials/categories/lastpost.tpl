@@ -3,7 +3,7 @@
 	<!-- IF @first -->
 	<div component="category/posts">
 		<p>
-			<a href="{config.relative_path}/user/{../user.userslug}">
+			<a href="{config.relative_path}/topic/{../topic.slug}<!-- IF ../index -->/{../index}<!-- ENDIF ../index -->">
 				<!-- IF ../user.picture -->
 				<img class="user-img" title="{../user.username}" alt="{../user.username}" src="{../user.picture}">
 				<!-- ELSE -->
@@ -11,16 +11,17 @@
 				<!-- ENDIF ../user.picture -->
 				<span class="" title="{../topic.title}" style="">{../topic.title}</span>
 			</a>
-			
 		</p>
-		<div class="post-content">
+		<!--<div class="post-content">
 			{../content}
-		</div>
-		<div>
-			<span>by {../user.username} </span>
-			<a class="permalink" href="{config.relative_path}/topic/{../topic.slug}<!-- IF ../index -->/{../index}<!-- ENDIF ../index -->">
-				<small class="timeago" title="{../timestampISO}"></small>
-			</a>
+		</div>-->
+		<div class="">
+			<span>by 
+			<a href="{config.relative_path}/user/{../user.userslug}">
+				<span class="" title="{../user.username}" style="">{../user.username}</span>
+			</a> 
+			<small class="timeago" title="{../timestampISO}"></small></span>
+
 		</div>
 	</div>
 	<!-- ENDIF @first -->
