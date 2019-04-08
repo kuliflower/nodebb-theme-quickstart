@@ -37,7 +37,7 @@
 			<!-- BEGIN posts -->
 				<li component="post" replycounter="{counter start=1 skip=1}" class="<!-- IF posts.deleted -->deleted<!-- ENDIF posts.deleted -->" <!-- IMPORT partials/data/topic.tpl -->>
 					<a component="post/anchor" data-index="{posts.index}" id="{posts.index}"></a>
-
+					Hello world
 					<meta itemprop="datePublished" content="{posts.timestampISO}">
 					<meta itemprop="dateModified" content="{posts.editedISO}">
 
