@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-tigertown",
-  "version": "0.19.14",
+  "version": "0.19.15",
   "description": "Wests Tigers Theme",
   "main": "theme.less",
   "keywords": [],
