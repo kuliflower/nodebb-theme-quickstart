@@ -1,6 +1,6 @@
 {
 	"id": "nodebb-theme-tigertown",
-	"library": "lib/library.js",
+	"library": "lib/theme.js",
 	"hooks": [
 		{ "hook": "filter:teasers.get", "method": "getTeasers" },
 		{ "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
