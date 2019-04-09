@@ -1,9 +1,9 @@
 {
 	"id": "nodebb-theme-tigertown",
-	"library": "./lib/library.js",
+	"library": "library.js",
 	"hooks": [
-		{ "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"},
 		{ "hook": "filter:teasers.get", "method": "getTeasers" },
+		{ "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
 		{ "hook": "filter:config.get", "method": "getThemeConfig" },
 		{ "hook": "static:app.load", "method": "init" },
 		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
