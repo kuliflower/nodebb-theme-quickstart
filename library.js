@@ -97,7 +97,7 @@ library.getThemeConfig = function(config, callback) {
 };
 
 function renderAdmin(req, res, next) {
-	res.render('admin/plugins/tigertown', {});
+	res.render('admin/plugins/persona', {});
 }
 
 library.addUserToTopic = function(data, callback) {
