@@ -51,6 +51,7 @@
 
 <div class="content" component="post/content" itemprop="text">
 	{posts.content}
+	<!-- IMPORT partials/topic/likes_post.tpl -->
 </div>
 
 <div class="clearfix post-footer">
@@ -66,7 +67,7 @@
 
 		<!-- IF !reputation:disabled -->
 		
-		<!-- IMPORT partials/topic/likes_post.tpl -->
+		
 
 		<!-- ENDIF !reputation:disabled -->
 
