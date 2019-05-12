@@ -10,8 +10,8 @@ library.init = function(params, callback) {
 	var app = params.router;
 	var middleware = params.middleware;
 
-	app.get('/admin/plugins/persona', middleware.admin.buildHeader, renderAdmin);
-	app.get('/api/admin/plugins/persona', renderAdmin);
+	app.get('/admin/plugins/tigertown', middleware.admin.buildHeader, renderAdmin);
+	app.get('/api/admin/plugins/tigertown', renderAdmin);
 
 	callback();
 };
@@ -97,7 +97,7 @@ library.getThemeConfig = function(config, callback) {
 };
 
 function renderAdmin(req, res, next) {
-	res.render('admin/plugins/persona', {});
+	res.render('admin/plugins/tigertown', {});
 }
 
 library.addUserToTopic = function(data, callback) {
